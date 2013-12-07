@@ -1,0 +1,16 @@
+This script is specifically useful when using the eldk cross-compiler from 
+http://denx.de/
+
+So far you've executed the wgets on this page: 
+http://www.denx.de/wiki/ELDK-5/WebHome and 
+and you've run the install script sucessfully. Yay! Now all th binutils files
+you wanted are in some weird directory such as 
+/opt/eldk-5.4/armv5te/sysroots/i686-eldk-linux/usr/bin/armv5te-linux-gnueabi/ .
+Further, (this is particularly true if trying to compile u-boot) the code
+you're compiling expects your tools to have names like arm-linux-gcc, 
+while they actually have names like arm-linux-gnueabi-gcc.
+
+This script takes those binutils programs that have just been installed and
+creates synbolic links to them in a more convenient location with more 
+expected names. 
+
