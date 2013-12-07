@@ -3,8 +3,8 @@ http://denx.de/
 
 So far you've executed the wgets on this page: 
 http://www.denx.de/wiki/ELDK-5/WebHome and 
-and you've run the install script sucessfully. Yay! Now all the binutils files
-you wanted are in some weird directory such as 
+and you've run the install script sucessfully. Yay! Now all the 
+binutils files you wanted are in some weird directory such as 
 /opt/eldk-5.4/armv5te/sysroots/i686-eldk-linux/usr/bin/armv5te-linux-gnueabi/ .
 Further, (this is particularly true if trying to compile u-boot) the code
 you're compiling expects your tools to have names like arm-linux-gcc, 
