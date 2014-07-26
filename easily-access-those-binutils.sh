@@ -1,6 +1,6 @@
 targetcpu=armv5te
 targetdir=/usr/local/bin
-origdir=/opt/eldk-5.4/$targetcpu/sysroots/i686-eldk-linux/usr/bin/$targetcpu-linux-gnueabi;
+origdir=/opt/eldk-5.5/$targetcpu/sysroots/i686-eldk-linux/usr/bin/$targetcpu-linux-gnueabi;
 
 cd $origdir
 
