@@ -9,4 +9,7 @@ fi
 
 cd $origdir
 
-for i in $(ls arm-linux*); do ln -s $PWD/$i $targetdir/$(echo $i | sed s/arm-linux-gnueabi/arm-linux/ ); done
+for i in $(ls arm-linux*) 
+  do ln -s $PWD/$i $targetdir/$(echo $i | sed s/arm-linux-gnueabi/arm-linux/ )
+done
+
