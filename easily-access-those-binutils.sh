@@ -2,8 +2,8 @@ targetcpu=armv5te
 targetdir=/usr/local/bin
 origdir=/opt/eldk-5.5/$targetcpu/sysroots/i686-eldk-linux/usr/bin/$targetcpu-linux-gnueabi;
 
-if (( $EUID !0 )); then
-  echo "Error: not root user"
+if [[ $EUID -ne 0 ]]; then
+  echo "Error: Not root user."
   exit 1
 fi
 
